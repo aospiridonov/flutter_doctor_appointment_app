@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_doctor_appointment_app/constants/colors.dart';
+import 'package:flutter_doctor_appointment_app/screens/home_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -52,7 +53,11 @@ class WelcomeScreen extends StatelessWidget {
             borderRadius: BorderRadius.circular(10),
             child: InkWell(
               onTap: () {
-                //Navigator.push(context, MaterialPageRoute(builder: (context) => )
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const HomeScreen(),
+                    ));
               },
               child: Container(
                 padding: const EdgeInsets.all(10),
