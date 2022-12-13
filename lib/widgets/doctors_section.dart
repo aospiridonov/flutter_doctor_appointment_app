@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_doctor_appointment_app/constants/colors.dart';
+import 'package:flutter_doctor_appointment_app/screens/screens.dart';
 
 class DoctorsSection extends StatelessWidget {
   const DoctorsSection({Key? key}) : super(key: key);
@@ -38,7 +39,11 @@ class DoctorsSection extends StatelessWidget {
                       children: [
                         InkWell(
                           onTap: () {
-                            //Navigator.of(context).push(MaterialPageRoute(builder: (context) => ));
+                            Navigator.of(context).push(
+                              MaterialPageRoute(
+                                builder: (context) => const AppointScreen(),
+                              ),
+                            );
                           },
                           child: ClipRRect(
                             borderRadius: const BorderRadius.only(

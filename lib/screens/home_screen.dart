@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             Container(
               width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height / 3.5,
+              height: MediaQuery.of(context).size.height / 3.7,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
@@ -135,7 +135,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 15),
+                  const SizedBox(height: 25),
                   SizedBox(
                     height: 100,
                     child: ListView.builder(
@@ -177,7 +177,7 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  const SizedBox(height: 15),
+                  const SizedBox(height: 25),
                   Padding(
                     padding: const EdgeInsets.only(left: 15),
                     child: Text(
